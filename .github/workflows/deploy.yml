@@ -45,8 +45,15 @@ jobs:
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
-      - name: Create 404.html for client-side routing
-        run: cp dist/index.html dist/404.html
+      - name: Create static routes and 404 for GitHub Pages
+        run: |
+          cp dist/index.html dist/404.html
+          cp dist/index.html dist/privacy-policy.html
+          mkdir -p dist/privacy-policy
+          cp dist/index.html dist/privacy-policy/index.html
+          sed -i 's|<title>.*</title>|<title>Privacy Policy - BuiltToSolve</title>|' dist/privacy-policy.html
+          sed -i 's|<title>.*</title>|<title>Privacy Policy - BuiltToSolve</title>|' dist/privacy-policy/index.html
+
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
