@@ -10,12 +10,18 @@ import {
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { useTilt } from '@/hooks/useTilt';
 
+import tripsterImg from '../../../assets/images/tripster.png';
+import keyVaultImg from '../../../assets/images/keyVault.png';
+import offlineChessImg from '../../../assets/images/OfflineChess.jpg';
+import qrCodeManagerImg from '../../../assets/images/qrCodeManager.jpg';
+import tossCoinImg from '../../../assets/images/tossCoin.webp';
+
 const projects = [  
   {
     title: 'Tripster',
     category: 'iOS / Android',
     price: 'Free',
-    image: 'assets/images/tripster.png',
+    image: tripsterImg,
     icon: Smartphone,
     color: '#10b981',
     featured: true,
@@ -28,7 +34,7 @@ const projects = [
     title: 'Key Vault',
     category: 'iOS / Android',
     price: 'Free',
-    image: 'assets/images/keyVault.png',
+    image: keyVaultImg,
     icon: Shield,
     color: '#fbbf24',
     featured: false,
@@ -41,7 +47,7 @@ const projects = [
     title: 'Offline Chess',
     category: 'Website',
     price: 'Free',
-    image: 'assets/images/OfflineChess.jpg',
+    image: offlineChessImg,
     icon: Globe,
     color: '#22d3ee',
     featured: true,
@@ -54,7 +60,7 @@ const projects = [
     title: 'QR Code Manager',
     category: 'iOS / Android',
     price: 'Free',
-    image: 'assets/images/qrCodeManager.jpg',
+    image: qrCodeManagerImg,
     icon: QrCode,
     color: '#22d3ee',
     featured: false,
@@ -67,7 +73,7 @@ const projects = [
     title: 'Toss Coin',
     category: 'iOS / Android',
     price: 'Free',
-    image: 'assets/images/tossCoin.webp',
+    image: tossCoinImg,
     icon: Coins,
     color: '#f59e0b',
     featured: false,
