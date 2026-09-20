@@ -203,12 +203,12 @@ export function PrivacyPolicy({ onNavigateHome }: PrivacyPolicyProps) {
               <p>
                 <span className="text-white font-medium">Yukti Dev</span> is concerned about the privacy of the data and information of the Users accessing the website/Application –{' '}
                 <a
-                  href="https://aksharma-net.web.app"
+                  href="https://builttosolve.github.io/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-primary-light underline font-medium inline-flex items-center gap-1"
                 >
-                  https://aksharma-net.web.app
+                  builttosolve.github.io
                   <ExternalLink size={13} />
                 </a>{' '}
                 or its various mobile applications.
