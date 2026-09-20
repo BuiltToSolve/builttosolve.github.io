@@ -36,14 +36,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build
         run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Create 404.html for client-side routing
         run: cp dist/index.html dist/404.html
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
