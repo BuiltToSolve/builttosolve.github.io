@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+Host: https://builttosolve.github.io
+
+# Sitemap
+Sitemap: https://builttosolve.github.io/sitemap.xml
